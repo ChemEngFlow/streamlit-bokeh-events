@@ -4,7 +4,7 @@ import {
   StreamlitComponentBase,
   withStreamlitConnection,
 } from "streamlit-component-lib"
-import { embed } from "@bokeh/bokehjs";
+import { embed } from "@bokeh/bokehjs/build/js/lib";
 
 interface State {
   eventDetailMap: Map<string, object>;
