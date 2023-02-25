@@ -6,7 +6,7 @@ import {
 } from "streamlit-component-lib"
 // import { embed } from "@bokeh/bokehjs/build/js/lib";
 
-// declare and import Bokeh 
+// declare and import Bokeh by CDN
 declare global {
   interface Window {
     Bokeh?: any;
@@ -14,7 +14,8 @@ declare global {
 }
 
 const Bokeh = window.Bokeh;
-
+// 
+  
 interface State {
   eventDetailMap: Map<string, object>;
 }
