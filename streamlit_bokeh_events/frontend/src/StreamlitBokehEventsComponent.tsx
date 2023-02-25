@@ -4,7 +4,16 @@ import {
   StreamlitComponentBase,
   withStreamlitConnection,
 } from "streamlit-component-lib"
-import { embed } from "@bokeh/bokehjs/build/js/lib";
+// import { embed } from "@bokeh/bokehjs/build/js/lib";
+
+// declare and import Bokeh 
+declare global {
+  interface Window {
+    Bokeh?: any;
+  }
+}
+
+const Bokeh = window.Bokeh;
 
 interface State {
   eventDetailMap: Map<string, object>;
@@ -47,7 +56,7 @@ class StreamlitBokehEventsComponent extends StreamlitComponentBase<State> {
 
     const bokehJson = this.props.args["bokeh_plot"]
     const figure = JSON.parse(bokehJson)
-    embed.embed_item(figure)
+    Bokeh.embed.embed_item(figure)
     const plot = figure && figure.doc && figure.doc.roots && figure.doc.roots.references
         ? figure.doc.roots.references.find((e: any) => e.type === "Plot")
         : undefined
