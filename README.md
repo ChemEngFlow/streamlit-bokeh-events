@@ -6,7 +6,7 @@
 2. Fixing Bokeh import error (streamlit_bokeh_events/frontend/public/index.html)<br>
 [[bokehjs] Trying to integrate into a TypeScript project](https://discourse.bokeh.org/t/bokehjs-trying-to-integrate-into-a-typescript-project/5274)
 
-3. Add .env (streamlit_bokeh_events/frontend/.env)
+3. Add .env (streamlit_bokeh_events/frontend/.env)<br>
 For change from port 3000 to 3001
 
 # The text below is original.
