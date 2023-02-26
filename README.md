@@ -1,3 +1,13 @@
+# The text below is a note of changes from the original.
+1. Fixing module errors (streamlit_bokeh_events/frontend/package.json)
+[‘apache-arrow’ module not found error](https://discuss.streamlit.io/t/apache-arrow-module-not-found-error/21952)
+[Node.js 17.0.1 Gatsby error - "digital envelope routines::unsupported ... ERR_OSSL_EVP_UNSUPPORTED" [duplicate]](https://stackoverflow.com/questions/69665222/node-js-17-0-1-gatsby-error-digital-envelope-routinesunsupported-err-os)
+
+2. Fixing Bokeh import error (streamlit_bokeh_events/frontend/public/index.html)
+[[bokehjs] Trying to integrate into a TypeScript project](https://discourse.bokeh.org/t/bokehjs-trying-to-integrate-into-a-typescript-project/5274)
+
+# The text below is original.
+
 # NOTE
 Due to some personal issues I am unable to maintain the project for quite a while.
 I am archiving this project and there wont be further updates in it.
