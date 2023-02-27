@@ -1,7 +1,7 @@
 # Background
 I really wanted streamlit-bokeh-events to work in my environment(Streamlit 1.18.1 and Bokeh 2.4.3 in windows).<br>
 I found out that the plot was not working well because the npm installed BokehJS was not imported well on the StreamlitBokehEventsComponent.tsx, so I rewrote it and index.html files to install BokehJS via it's CDN.<br>
-Since the above changes are disruptive, they are not expected to work in the limited cases where security does not allow communication with the outside world.<br>
+The above changes are breaking changes, so it is expected that they will not work in limited cases where communication with the CDN is not allowed for security reasons(BokehJS browser cache required).<br>
 This issue with BokehJS has been set as a milestone, so it may work the original way in the future.<br>
 [ [BUG] installing bokehjs from npm doesn't pull in dependencies #12616 ](https://github.com/bokeh/bokeh/issues/12616)<br>
 
