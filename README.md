@@ -6,7 +6,7 @@ This issue with BokehJS has been set as a milestone, so it may work the original
 [ [BUG] installing bokehjs from npm doesn't pull in dependencies #12616 ](https://github.com/bokeh/bokeh/issues/12616)<br>
 
 # Installation
-Install node.js (Successful build this with 18.14.2 LTS for Windows)
+Install node.js (Successful build this with 18.14.2 LTS for Windows)<br>
 Execute the following
 ```
 git clone https://github.com/ChemEngFlow/streamlit-bokeh-events
