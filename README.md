@@ -14,8 +14,10 @@ cd ./streamlit-bokeh-events/streamlit-bokeh-events/frontend (Move to same direct
 npm install
 npm run build
 cd ../ (Move to same directory as setup.py)
-pip install .
+pip install . 
 ```
+Delete directories and files downloaded for installation<br>
+
 # Changes from the original and reference
 1. Fixing module errors (streamlit_bokeh_events/frontend/package.json)<br>
 [‘apache-arrow’ module not found error](https://discuss.streamlit.io/t/apache-arrow-module-not-found-error/21952)<br> 
