@@ -1,4 +1,20 @@
-# The text below is a note of changes from the original.
+# Background
+I really wanted streamlit-bokeh-events to work in my environment(Streamlit 1.18.1 and Bokeh 2.4.3 in windows).<br>
+I found out that the plot was not working well because the npm installed BokehJS was not imported well on the StreamlitBokehEventsComponent.tsx, so I rewrote it and index.html files to install BokehJS via it's CDN.<br>
+Since the above changes are disruptive, they are not expected to work in the limited cases where security does not allow communication with the outside world.<br>
+This issue with BokehJS has been set as a milestone, so it may work the original way in the future.<br>
+[ [BUG] installing bokehjs from npm doesn't pull in dependencies #12616 ](https://github.com/bokeh/bokeh/issues/12616)<br>
+
+# Installation
+1. install node.js (Successful build this with 18.14.2 LTS for Windows)
+1. git clone https://github.com/ChemEngFlow/streamlit-bokeh-events
+1. cd ./streamlit-bokeh-events/streamlit-bokeh-events/frontend (Move to same directory as package.json)
+1. npm install
+1. npm run build
+1. cd ../ (Move to same directory as setup.py)
+1. pip install .
+
+# Changes from the original and reference
 1. Fixing module errors (streamlit_bokeh_events/frontend/package.json)<br>
 [‘apache-arrow’ module not found error](https://discuss.streamlit.io/t/apache-arrow-module-not-found-error/21952)<br> 
 [Node.js 17.0.1 Gatsby error - "digital envelope routines::unsupported ... ERR_OSSL_EVP_UNSUPPORTED" [duplicate]](https://stackoverflow.com/questions/69665222/node-js-17-0-1-gatsby-error-digital-envelope-routinesunsupported-err-os)
@@ -7,9 +23,9 @@
 [[bokehjs] Trying to integrate into a TypeScript project](https://discourse.bokeh.org/t/bokehjs-trying-to-integrate-into-a-typescript-project/5274)
 
 3. Add .env (streamlit_bokeh_events/frontend/.env)<br>
-For change from port 3000 to 3001
+For change from port 3000 to 3001 (Not necessary.)
 
-# The text below is original.
+# The following is original
 
 # NOTE
 Due to some personal issues I am unable to maintain the project for quite a while.
