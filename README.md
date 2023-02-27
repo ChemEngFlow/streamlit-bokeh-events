@@ -6,14 +6,16 @@ This issue with BokehJS has been set as a milestone, so it may work the original
 [ [BUG] installing bokehjs from npm doesn't pull in dependencies #12616 ](https://github.com/bokeh/bokeh/issues/12616)<br>
 
 # Installation
-1. install node.js (Successful build this with 18.14.2 LTS for Windows)
-1. git clone https://github.com/ChemEngFlow/streamlit-bokeh-events
-1. cd ./streamlit-bokeh-events/streamlit-bokeh-events/frontend (Move to same directory as package.json)
-1. npm install
-1. npm run build
-1. cd ../ (Move to same directory as setup.py)
-1. pip install .
-
+Install node.js (Successful build this with 18.14.2 LTS for Windows)
+Execute the following
+```
+git clone https://github.com/ChemEngFlow/streamlit-bokeh-events
+cd ./streamlit-bokeh-events/streamlit-bokeh-events/frontend (Move to same directory as package.json)
+npm install
+npm run build
+cd ../ (Move to same directory as setup.py)
+pip install .
+```
 # Changes from the original and reference
 1. Fixing module errors (streamlit_bokeh_events/frontend/package.json)<br>
 [‘apache-arrow’ module not found error](https://discuss.streamlit.io/t/apache-arrow-module-not-found-error/21952)<br> 
